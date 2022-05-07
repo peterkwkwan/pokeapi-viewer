@@ -1,11 +1,5 @@
 # PokéAPI Viewer by pkwan
 
-### Getting started
-
-`git clone https://gitlab.com/peterkwkwan/pokeapi-viewer.git` from an empty directory.
-
-Git source can be found here: https://gitlab.com/peterkwkwan/pokeapi-viewer.git
-
 ### `npm i`
 
 > Installs the necessary dependencies
