@@ -1,6 +1,6 @@
 # PokéAPI Viewer by pkwan
 
-[hosted on netlify](https://pokeapi-viewer.netlify.app/)
+[Hosted on netlify](https://pokeapi-viewer.netlify.app/)
 
 ### `npm i`
 
