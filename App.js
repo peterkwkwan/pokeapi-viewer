@@ -1,5 +1,6 @@
 import React from "react";
-import { StyleSheet, View, Image, SafeAreaView } from "react-native";
+import { StyleSheet, View, Image, SafeAreaView, Button } from "react-native";
+import { useNavigation } from "@react-navigation/native";
 import { Provider } from "react-redux";
 import { store } from "./store";
 import tw from "tailwind-react-native-classnames";
@@ -27,6 +28,7 @@ export default function App() {
                 resizeMode: "contain",
               }}
               source={PokeAPIPNG}
+              onPress={() => navigation.goBack()}
             />
           </View>
           <Stack.Navigator>

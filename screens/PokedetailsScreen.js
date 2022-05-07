@@ -1,11 +1,13 @@
 import React from "react";
-import { StyleSheet, Text, View, Image } from "react-native";
+import { StyleSheet, Text, View, Image, Button } from "react-native";
 import tw from "tailwind-react-native-classnames";
-
+import { useNavigation } from "@react-navigation/native";
 import { images } from "../shared/images";
 import { findTypeColor } from "../shared/typeFinder";
 
 const PokedetailsScreen = ({ route }) => {
+  const navigation = useNavigation();
+
   const { item: pokemon } = route.params;
 
   let POKEURL;
@@ -38,6 +40,11 @@ const PokedetailsScreen = ({ route }) => {
         <Image
           style={{ height: 400, width: 400, resizeMode: "contain" }}
           source={POKEURL}
+        />
+        <Button
+          style={tw`mt-2`}
+          title="Go back"
+          onPress={() => navigation.goBack()}
         />
       </View>
     </View>
