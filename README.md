@@ -1,5 +1,7 @@
 # PokéAPI Viewer by pkwan
 
+[hosted on netlify](https://pokeapi-viewer.netlify.app/)
+
 ### `npm i`
 
 > Installs the necessary dependencies
